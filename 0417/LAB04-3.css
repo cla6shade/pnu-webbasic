@@ -1,0 +1,32 @@
+.ex1 {
+    background-color: lightblue;
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    z-index: 1;
+    /*write complete code using 'overflow' attribute */
+  }
+
+div {
+    background: tomato;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+
+    
+}
+
+.container {
+    background: black;
+    /* position: relative; */
+    z-index: 2;
+    width: 100%;
+} 
+#box {
+    background: aqua;
+    top: 248px;
+    left: 20px;
+    width: 100px;
+    position: sticky;
+    /*write complete code using 'position' attribute */
+}

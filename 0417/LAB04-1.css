@@ -1,0 +1,15 @@
+div{
+    display: inline;
+    border: 1px solid yellowgreen;
+     /*Write a code using 'width' and 'border' attribute*/
+}
+
+p{
+    color: blue;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: blueviolet;
+    /*Write a code using 'background-color', 'position', 'bottom', and 'width' attribute*/
+}
+
