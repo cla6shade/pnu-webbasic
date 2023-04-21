@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            margin: 0 auto;
+            width: 980px;
+            height: 100vh;
+        }
+        header {
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+        h1, p {
+            margin: 0;
+        }
+        h4 {
+            margin: 0.9em 0 0.9em 0;
+        }
+        .navbar {
+            display: flex;
+            height: 43px;
+            background-color: gray;
+        }
+        .nav-item {
+            color: white;
+            padding: 10px 20px 10px 20px;
+        }
+        hr {
+            background-color: lightgray;
+            height: 1px;
+            width: 100%;
+            margin-bottom: 3px;
+        }
+        footer {
+            clear: both;
+            height: 80px;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile {
+            background-image: url("./images/profile.jpg");
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+        }
+        .personal-info {
+            float: left;
+            width: 260px;
+        }
+        .info-table {
+            margin-top: 10px;
+            width: 240px;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: lightgray 1px solid;
+        }
+        td {
+            height: 40px;
+            text-align: center;
+            font-size: 14px;
+        }
+        td:nth-child(1){
+            width: 80px;
+            background-color: lightgray;
+            font-weight: bold;
+            border-bottom: white 1px solid;
+        }
+        td:nth-child(2){
+            border-bottom: lightgray 1px solid;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        .programming-info {
+            width: 720px;
+            float: right;
+            background-color: lightgray;
+        }
+        .language-container {
+            width: 100%;
+            height: 480px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: space-evenly;
+        }
+        .language {
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            border: black 3px solid;
+            background-color: white;
+            display: flex;
+            align-items: center;
+        }
+        .language > img {
+            /* 이미지가 너무 큰 탓에 너비/높이를 지정하지 않으면
+                이미지가 거의 표시되지 않아서, 어쩔 수 없이 지정하게 되었습니다..
+            */
+            max-width: 200px;
+            max-height: 200px;
+        }
+    </style>
+    <title>이세형의 홈페이지</title>
+</head>
+<body>
+<header>
+    <h1>이세형의 홈페이지</h1>
+</header>
+<div class="navbar">
+    <div class="nav-item">
+        <p>Home</p>
+    </div>
+    <div class="nav-item">
+        <p>Profile</p>
+    </div>
+    <div class="nav-item">
+        <p>Education</p>
+    </div>
+    <div class="nav-item">
+        <p>Skills</p>
+    </div>
+    <div class="nav-item">
+        <p>Contact</p>
+    </div>
+</div>
+<div class="info-container personal-info">
+    <h3>201914524 이세형</h3>
+    <div class="profile"></div>
+    <table class="info-table">
+        <tbody>
+        <tr>
+            <td>이름</td>
+            <td>이세형</td>
+        </tr>
+        <tr>
+            <td>학번</td>
+            <td>201914524</td>
+        </tr>
+        <tr>
+            <td>학과</td>
+            <td>해양학과</td>
+        </tr>
+        <tr>
+            <td>학년</td>
+            <td>3학년</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="info-container programming-info">
+    <h4>Education</h4>
+    <p style="margin-bottom: 10px; font-size: 14px;">2023 인터넷과웹기초</p>
+    <hr>
+    <h4>Skills</h4>
+    <div class="language-container">
+        <div class="language">
+            <img src="images/java.png" alt="java">
+        </div>
+        <div class="language">
+            <img src="images/node.js.png" alt="java">
+        </div>
+        <div class="language">
+            <img src="images/php.png" alt="java">
+        </div>
+        <div class="language">
+            <img src="images/python.png" alt="java">
+        </div>
+        <div class="language">
+            <img src="images/react.png" alt="java">
+        </div>
+        <div class="language">
+            <img src="images/typescript.png" alt="java">
+        </div>
+    </div>
+</div>
+<footer>
+    <p><i>Copyright &copy; 2023 이세형</i></p>
+</footer>
+</body>
+</html>
