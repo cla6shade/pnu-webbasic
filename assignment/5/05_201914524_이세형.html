@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: black;
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
+
+        h1, p {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1060px;
+            margin: 0 auto;
+        }
+
+        .product-container {
+            margin-top: 40px;
+            display: grid;
+            width: 980px;
+            max-width: 1060px;
+            grid-template-areas:
+            'image1 image2 image3 image4'
+            'name1 name2 name3 name4'
+            'desc1 desc2 desc3 desc4';
+            grid-gap: 20px;
+        }
+
+        .product-cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 30px;
+        }
+
+        .product-cell.image {
+            height: 255px;
+            width: 210px;
+            margin: 0 auto;
+        }
+
+        .image:nth-child(1) {
+            background-image: url("./images/sph-a5000.jpg");
+            grid-area: image1;
+        }
+
+        .image:nth-child(2) {
+            background-image: url("./images/sch-w120.jpg");
+            grid-area: image2;
+        }
+
+        .image:nth-child(3) {
+            background-image: url("./images/sch-v500.jpg");
+            grid-area: image3;
+        }
+
+        .image:nth-child(4) {
+            background-image: url("./images/sch-s250.jpg");
+            grid-area: image4;
+        }
+
+        .name:nth-child(5) {
+            grid-area: name1;
+        }
+        .name:nth-child(6) {
+            grid-area: name2;
+        }
+        .name:nth-child(7) {
+            grid-area: name3;
+        }
+        .name:nth-child(8) {
+            grid-area: name4;
+        }
+        .desc:nth-child(9) {
+            grid-area: desc1;
+        }
+        .desc:nth-child(10) {
+            grid-area: desc2;
+        }
+        .desc:nth-child(11) {
+            grid-area: desc3;
+        }
+        .desc:nth-child(12) {
+            grid-area: desc4;
+        }
+
+        .product-cell.desc {
+            font-size: 10px;
+        }
+
+        footer {
+            width: 100%;
+            height: 20px;
+        }
+
+        @media (max-width: 1060px) {
+            .product-container {
+                min-width: 440px;
+                max-width: 100%;
+                grid-template-areas:
+                'image1 image2'
+                'name1 name2'
+                'desc1 desc2'
+                'image3 image4'
+                'name3 name4'
+                'desc3 desc4';
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>201914524 이세형</h1>
+    </header>
+    <h1 style="margin-top: 25px">Compare the products</h1>
+    <div class="product-container">
+        <div class="product-cell image">
+        </div>
+        <div class="product-cell image">
+        </div>
+        <div class="product-cell image">
+        </div>
+        <div class="product-cell image">
+        </div>
+        <div class="product-cell name">
+            <p>SPH-A5000</p>
+        </div>
+        <div class="product-cell name">
+            <p>SCH-W120</p>
+        </div>
+        <div class="product-cell name">
+            <p>SCH-V500</p>
+        </div>
+        <div class="product-cell name">
+            <p>SCH-S250</p>
+        </div>
+
+        <div class="product-cell desc">
+            <p>세계 최초의 전자동 폴더</p>
+        </div>
+        <div class="product-cell desc">
+            <p>한국 최초의 WCDMA 폰</p>
+        </div>
+        <div class="product-cell desc">
+            <p>가로본능 로테이션 폴더폰</p>
+        </div>
+        <div class="product-cell desc">
+            <p>세계 최초의 500만화소 카메라 탑재 휴대폰</p>
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>
